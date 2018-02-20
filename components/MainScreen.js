@@ -29,7 +29,8 @@ class MainScreen extends Component {
 }
 
 
-const AppTabNavigator = TabNavigator({
+const AppTabNavigator = TabNavigator(
+{
     HomeTab :  {
          screen :HomeTab
     },
@@ -45,8 +46,24 @@ const AppTabNavigator = TabNavigator({
     SearchTab :  {
         screen :SearchTab
     }
+} , // here ends all the screens for the tabs 
+{
+    animationEnabled : true,
+    swipeEnabled : false,
+    tabBarPosition : "bottom",
+    tabBarOptions: {
+        // backgroundColor:  '#FFC5B3'
+        inactiveBackgroundColor: '#fff',
+        activeBackgroundColor: '#FFC5B3',
+        activeTintColor: '#2F6DFF',
+        inactiveTintColor: '#99A4FF',
+        showLabel: false,
+        showIcon: true,
+        
+    }
+}
 
-})
+)
 
 
 

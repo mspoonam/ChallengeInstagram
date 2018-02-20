@@ -1,13 +1,22 @@
 //import liraries
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import {Icon} from 'native-base'
 
 // create a component
 class LikesTab extends Component {
+    static navigationOptions = {
+        tabBarIcon : ({tintColor}) => (
+            <Icon name ="ios-leaf" style ={{color:tintColor}}/>
+        )
+    }
+
     render() {
         return (
             <View style={styles.container}>
-                <Text>LikesTab</Text>
+                <Text>Hey Amit </Text>
+                <Text>You are looking at my Favourite Likes Tab </Text>
+                
             </View>
         );
     }
@@ -19,7 +28,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#2c3e50',
+        backgroundColor: '#e2e2e2',
     },
 });
 
